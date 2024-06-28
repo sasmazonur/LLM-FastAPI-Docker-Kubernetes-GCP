@@ -69,7 +69,7 @@ sentiment-analysis-project/
 
 ## Follow the Complete Guide
 
-For a detailed step-by-step guide, follow the complete tutorial on Medium: [Deploy LLM Sentiment Analysis on Google Cloud Platform: Scikit-Learn, FastAPI, Docker, and Kubernetes Tutorial 2024](https://medium.com)
+For a detailed step-by-step guide, follow the complete tutorial on Medium: [Deploy LLM Sentiment Analysis on Google Cloud Platform: Scikit-Learn, FastAPI, Docker, and Kubernetes Tutorial 2024](https://onursasmaz.medium.com/deploy-llm-sentiment-analysis-on-gcp-scikit-learn-fastapi-docker-and-kubernetes-2024-8798b403984c)
 
 ## Conclusion
 
