@@ -1,5 +1,5 @@
 # Sentiment Analysis Deployment on Google Cloud Platform
-
+![Project Image](https://github.com/sasmazonur/LLM-FastAPI-Docker-Kubernetes-GCP/project-image.png)
 ## Overview
 
 This project demonstrates how to build, deploy, and manage a sentiment analysis application using Scikit-Learn, FastAPI, Docker, and Kubernetes on Google Cloud Platform (GCP).
