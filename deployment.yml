@@ -1,0 +1,51 @@
+# ---------------------------------------------------------
+#
+# Author: Onur Sasmaz
+# Description: This YAML file contains configuration settings
+# 
+# Notes:
+# - Modify values as per your environment and requirements.
+# - Ensure correct indentation and syntax adherence.
+#
+# ---------------------------------------------------------
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentiment-analysis
+  labels:
+    app: sentiment-analysis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sentiment-analysis
+  template:
+    metadata:
+      labels:
+        app: sentiment-analysis
+    spec:
+      containers:
+      - name: sentiment-analysis
+        image: <your-dockerhub-username>/sentiment-analysis
+        ports:
+        - containerPort: 8080
+        env:
+        - name: APP_ENV
+          value: "production"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sentiment-analysis-service
+  labels:
+    app: sentiment-analysis
+spec:
+  selector:
+    app: sentiment-analysis
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer
